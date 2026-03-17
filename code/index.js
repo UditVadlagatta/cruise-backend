@@ -22,7 +22,7 @@ const corsOptions = {
   allowedHeaders: ["Content-Type", "Authorization"]
 };
 
-app.options("/(.*)", cors(corsOptions)); // ✅ Handle preflight FIRST
+// app.options("/(.*)", cors(corsOptions)); // ✅ Handle preflight FIRST
 app.use(cors(corsOptions));          // ✅ Apply CORS to all routes
 
 app.use(express.json());
