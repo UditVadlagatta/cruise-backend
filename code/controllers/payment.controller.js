@@ -33,7 +33,7 @@ async createPayment(req, res) {
       bookingCode: req.body.bookingCode,
       paymentMethod: req.body.paymentMethod,
       transactionId: req.body.transactionId,
-      paymentProof: req.file?.filename
+      paymentProof: req.file?.path
     });
 
     res.status(201).json({
