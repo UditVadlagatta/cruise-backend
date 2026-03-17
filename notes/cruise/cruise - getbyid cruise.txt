@@ -1,0 +1,2 @@
+Get : http://localhost:3000/api/cruises/getbyid/69a16b1a09f347e4441531c4
+

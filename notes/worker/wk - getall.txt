@@ -1,0 +1,26 @@
+GET : http://localhost:3000/api/workers/getall
+
+output:
+[
+    {
+        "_id": "69a7dfc9203bbb68e8fb5306",
+        "username": "Ravi Kumar",
+        "email": "ravi@gmail.com",
+        "role": "worker",
+        "isActive": true,
+        "createdAt": "2026-03-04T07:31:21.593Z",
+        "updatedAt": "2026-03-04T08:04:52.840Z",
+        "__v": 0,
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JrZXJfaWQiOiI2OWE3ZGZjOTIwM2JiYjY4ZThmYjUzMDYiLCJpYXQiOjE3NzI2MTE0OTIsImV4cCI6MTc3MzIxNjI5Mn0.DaIiTxITCgr5SseH5JPsF2HcuqmRaZI-AHbeAnouQCs"
+    },
+    {
+        "_id": "69a7e12aba5d1687039249e9",
+        "username": "udit",
+        "email": "udit@gmail.com",
+        "role": "worker",
+        "isActive": false,
+        "createdAt": "2026-03-04T07:37:14.928Z",
+        "updatedAt": "2026-03-04T07:49:31.525Z",
+        "__v": 0
+    }
+]

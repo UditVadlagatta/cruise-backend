@@ -1,0 +1,31 @@
+PUT: http://localhost:3000/api/cruises/update/69a27aca3b9cb20fa30395de
+
+JSON: 
+{
+  "description": "Updated luxury cruise from Mumbai to Goa with sightseeing",
+  "route": {
+    "from": "Mumbai",
+    "to": "Goa",
+    "segments": [
+      {
+        "from": "Mumbai",
+        "to": "Raigad",
+        "time": 65,
+        "distance": 51000,
+        "note": "Cruising along the coast - scenic view"
+      },
+      {
+        "from": "Raigad",
+        "to": "Goa",
+        "time": 115,
+        "distance": 149000,
+        "note": "Open sea route with stops"
+      }
+    ],
+    "totalTime": 180,
+    "totalDistance": 200000
+  },
+  "price": 5500,
+  "capacity": 120,
+  "status": "ACTIVE"
+}

@@ -1,0 +1,3 @@
+PUT : http://localhost:3000/api/workers/deactivate/69a7e12aba5d1687039249e9
+
+but not json required

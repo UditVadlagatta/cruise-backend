@@ -1,0 +1,25 @@
+POST : http://localhost:5000/api/customers/login
+
+json:
+{
+    "email":"udit@gmail.com",
+    "password":"123456"
+}
+
+output:
+{
+    "message": " login successfully!...",
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6IjY5YTAyZmQxNDY5N2FhNmZlY2U4OTdiNCIsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3Mjc3NjUyNiwiZXhwIjoxNzcyNzgwMTI2fQ.xAw-p4tIYhfE4c3bXUfwR_DlMluyqCHo-zZRIi8c0Xs",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6IjY5YTAyZmQxNDY5N2FhNmZlY2U4OTdiNCIsImlhdCI6MTc3Mjc3NjUyNiwiZXhwIjoxNzczMzgxMzI2fQ.vMjm1-yEka2-2EmEgMgzVncDEd_WYvUr6AlkHt24T_0",
+    "customer": {
+        "_id": "69a02fd14697aa6fece897b4",
+        "username": "udit",
+        "email": "udit@gmail.com",
+        "password": "$2b$10$uj6.OuIPAt50RBX9Sex84OVxLVe22pmrvynocc./J9nZ/fwnQfx2W",
+        "role": "customer",
+        "createdAt": "2026-02-26T11:34:41.288Z",
+        "updatedAt": "2026-03-06T05:55:26.815Z",
+        "__v": 0,
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6IjY5YTAyZmQxNDY5N2FhNmZlY2U4OTdiNCIsImlhdCI6MTc3Mjc3NjUyNiwiZXhwIjoxNzczMzgxMzI2fQ.vMjm1-yEka2-2EmEgMgzVncDEd_WYvUr6AlkHt24T_0"
+    }
+}

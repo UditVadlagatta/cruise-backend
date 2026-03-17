@@ -1,0 +1,129 @@
+[
+  {
+    "name": "Emerald Island Express",
+    "description": "Scenic ferry connecting the Andaman capital to Havelock",
+    "route": {
+      "from": "Port Blair",
+      "to": "Havelock Island",
+      "segments": [
+        {
+          "from": "Port Blair",
+          "to": "Neil Island",
+          "time": 90,
+          "distance": 37000,
+          "note": "Inter-island transit"
+        },
+        {
+          "from": "Neil Island",
+          "to": "Havelock Island",
+          "time": 60,
+          "distance": 18000,
+          "note": "Approaching Elephant Beach"
+        }
+      ],
+      "totalTime": 150,
+      "totalDistance": 55000
+    },
+    "price": 1500,
+    "capacity": 250,
+    "status": "ACTIVE",
+    "image": "emerald_express.png"
+  },
+
+
+  {
+    "name": "Malabar Heritage",
+    "description": "Cultural voyage through the backwaters and coast of Kerala",
+    "route": {
+      "from": "Kochi",
+      "to": "Alappuzha",
+      "segments": [
+        {
+          "from": "Kochi",
+          "to": "Cherai",
+          "time": 45,
+          "distance": 25000,
+          "note": "Passing through the harbor"
+        },
+        {
+          "from": "Cherai",
+          "to": "Alappuzha",
+          "time": 95,
+          "distance": 55000,
+          "note": "Entering the backwater channels"
+        }
+      ],
+      "totalTime": 140,
+      "totalDistance": 80000
+    },
+    "price": 3200,
+    "capacity": 80,
+    "status": "ACTIVE",
+    "image": "malabar_heritage.png"
+  },
+
+
+  {
+    "name": "Coral Reef Voyager",
+    "description": "Deep sea expedition to the Lakshadweep archipelago",
+    "route": {
+      "from": "Mangalore",
+      "to": "Kavaratti",
+      "segments": [
+        {
+          "from": "Mangalore",
+          "to": "Kadmat",
+          "time": 480,
+          "distance": 280000,
+          "note": "Deep sea crossing"
+        },
+        {
+          "from": "Kadmat",
+          "to": "Kavaratti",
+          "time": 180,
+          "distance": 120000,
+          "note": "Lagoon navigation"
+        }
+      ],
+      "totalTime": 660,
+      "totalDistance": 400000
+    },
+    "price": 8500,
+    "capacity": 150,
+    "status": "MAINTENANCE",
+    "image": "coral_voyager.png"
+  },
+
+
+  {
+    "name": "Konkan Sun-Seeker",
+    "description": "Short hop between the popular beaches of North and South Goa",
+    "route": {
+      "from": "Panjim",
+      "to": "Palolem",
+      "segments": [
+        {
+          "from": "Panjim",
+          "to": "Mormugao",
+          "time": 40,
+          "distance": 30000,
+          "note": "Mandovi River exit"
+        },
+        {
+          "from": "Mormugao",
+          "to": "Palolem",
+          "time": 50,
+          "distance": 45000,
+          "note": "Southward coastal cruise"
+        }
+      ],
+      "totalTime": 90,
+      "totalDistance": 75000
+    },
+    "price": 2000,
+    "capacity": 60,
+    "status": "ACTIVE",
+    "image": "sun_seeker.png"
+  }
+  
+]

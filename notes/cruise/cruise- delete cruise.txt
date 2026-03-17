@@ -1,0 +1,1 @@
+DELETE:  http://localhost:3000/api/cruises/delete/69a27aca3b9cb20fa30395de

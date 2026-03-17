@@ -1,0 +1,77 @@
+POST : http://localhost:3000/api/payments/create
+
+json:
+{
+  "bookingCode": "BK-305519",
+  "customerId": "69a02fd14697aa6fece897b4",
+  "cruiseId":"69a2a0ac65655c3de1830f6d",
+  "paymentMethod": "UPI",
+  "transactionId": "UPI789456123",
+  "paymentProof": "uploads/payments/proof1.jpg"
+}
+
+output:
+
+{
+    "message": "Payment submitted successfully. Awaiting for verification and status will updated soon...",
+    "payment": {
+        "_id": "69a7d758fefb9f1634216ead",
+        "booking": {
+            "_id": "69a2a21c65655c3de1830fdb",
+            "travelDate": "2026-03-02T00:00:00.000Z",
+            "totalPrice": 225,
+            "bookingCode": "BK-305519"
+        },
+        "customer": {
+            "_id": "69a02fd14697aa6fece897b4",
+            "username": "udit",
+            "email": "udit@gmail.com"
+        },
+        "cruise": {
+            "route": {
+                "from": "Mumbai",
+                "to": "Goa",
+                "segments": [
+                    {
+                        "from": "Mumbai",
+                        "to": "Raigad",
+                        "time": 60,
+                        "distance": 50000,
+                        "segmentPrice": 25,
+                        "note": "Cruising along the coast",
+                        "_id": "69a2a0ac65655c3de1830f6e"
+                    },
+                    {
+                        "from": "Raigad",
+                        "to": "Goa",
+                        "time": 120,
+                        "distance": 150000,
+                        "segmentPrice": 75,
+                        "note": "Open sea route",
+                        "_id": "69a2a0ac65655c3de1830f6f"
+                    }
+                ],
+                "totalTime": 180,
+                "totalDistance": 200000
+            },
+            "_id": "69a2a0ac65655c3de1830f6d",
+            "name": "Royal Cruise",
+            "description": "Luxury cruise from Mumbai to Goa",
+            "price": 100,
+            "capacity": 100,
+            "status": "ACTIVE",
+            "image": "cruise1.png",
+            "createdAt": "2026-02-28T08:00:44.842Z",
+            "updatedAt": "2026-02-28T08:00:44.842Z",
+            "__v": 0
+        },
+        "amount": 225,
+        "paymentMethod": "UPI",
+        "transactionId": "UPI789456123",
+        "paymentProof": "uploads/payments/proof1.jpg",
+        "status": "PENDING",
+        "createdAt": "2026-03-04T06:55:20.558Z",
+        "updatedAt": "2026-03-04T06:55:20.558Z",
+        "__v": 0
+    }
+}

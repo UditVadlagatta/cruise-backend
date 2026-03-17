@@ -1,0 +1,24 @@
+POST : http://localhost:5000/api/customers/create
+
+json:
+{
+    "username":"demo5",
+    "email":"demo5@gmail.com",
+    "password":"123456",
+    "role":"customer"
+}
+
+output:
+{
+    "message": "customer added successfully!...",
+    "customer": {
+        "username": "demo5",
+        "email": "demo5@gmail.com",
+        "password": "$2b$10$cL9W28pLAWpAxJY7W/D42.QNyj0QWYVb0LoRoTfQFZ9y6hVa124P2",
+        "role": "customer",
+        "_id": "69b1b26a9641a60aade807bb",
+        "createdAt": "2026-03-11T18:20:26.452Z",
+        "updatedAt": "2026-03-11T18:20:26.452Z",
+        "__v": 0
+    }
+}

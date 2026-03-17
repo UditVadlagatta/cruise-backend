@@ -1,0 +1,50 @@
+GET : http://localhost:3000/api/payments/getAll
+
+output:
+{
+    "message": "Getting all bookings...",
+    "payment": [
+        {
+            "_id": "69a7d9bd7661f249bfbef403",
+            "booking": {
+                "_id": "69a2a21c65655c3de1830fdb",
+                "customer": "69a02fd14697aa6fece897b4",
+                "cruise": "69a2a0ac65655c3de1830f6d",
+                "travelDate": "2026-03-02T00:00:00.000Z",
+                "seatsBooked": 3,
+                "boardingPoint": "Raigad",
+                "dropPoint": "Goa",
+                "status": "CANCELLED",
+                "totalPrice": 225,
+                "bookingCode": "BK-305519",
+                "createdAt": "2026-02-28T08:06:52.441Z",
+                "updatedAt": "2026-03-09T12:42:01.062Z",
+                "__v": 0,
+                "message": "CANCELLED requested by customer",
+                "cancellationReason": "CANCELLED requested by customer",
+                "payment": "69a7d9bd7661f249bfbef403"
+            },
+            "customer": {
+                "_id": "69a02fd14697aa6fece897b4",
+                "username": "udit",
+                "email": "udit@gmail.com",
+                "role": "customer",
+                "createdAt": "2026-02-26T11:34:41.288Z",
+                "updatedAt": "2026-03-10T11:10:38.751Z",
+                "__v": 0,
+                "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6IjY5YTAyZmQxNDY5N2FhNmZlY2U4OTdiNCIsImlhdCI6MTc3MzE0MTAzOCwiZXhwIjoxNzczMjI3NDM4fQ.8QUltPeWkFQRGoMcJ13V_lY6fyc52HxhUDjInGJ672I"
+            },
+            "cruise": "69a2a0ac65655c3de1830f6d",
+            "amount": 225,
+            "paymentMethod": "UPI",
+            "transactionId": "UPI789456123",
+            "paymentProof": "uploads/payments/proof1.jpg",
+            "status": "SUCCESS",
+            "createdAt": "2026-03-04T07:05:33.897Z",
+            "updatedAt": "2026-03-04T07:06:18.627Z",
+            "__v": 0,
+            "paidAt": "2026-03-04T07:06:18.625Z",
+            "remarks": "Payment screenshot verified. Amount matched."
+        }
+    ]
+}

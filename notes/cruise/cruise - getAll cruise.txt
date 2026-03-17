@@ -1,0 +1,199 @@
+GET : http://localhost:3000/api/cruises/getall
+
+output:
+{
+    "message": "Getting all cruises",
+    "count": 5,
+    "cruises": [
+        {
+            "route": {
+                "from": "Port Blair",
+                "to": "Havelock Island",
+                "segments": [
+                    {
+                        "from": "Port Blair",
+                        "to": "Neil Island",
+                        "time": 90,
+                        "distance": 37000,
+                        "segmentPrice": 1009,
+                        "note": "Inter-island transit",
+                        "_id": "69a29f47a8e022d4e58080ec"
+                    },
+                    {
+                        "from": "Neil Island",
+                        "to": "Havelock Island",
+                        "time": 60,
+                        "distance": 18000,
+                        "segmentPrice": 491,
+                        "note": "Approaching Elephant Beach",
+                        "_id": "69a29f47a8e022d4e58080ed"
+                    }
+                ],
+                "totalTime": 150,
+                "totalDistance": 55000
+            },
+            "_id": "69a29f47a8e022d4e58080eb",
+            "name": "Emerald Island Express",
+            "description": "Scenic ferry connecting the Andaman capital to Havelock",
+            "price": 1500,
+            "capacity": 250,
+            "status": "ACTIVE",
+            "image": "emerald_express.png",
+            "createdAt": "2026-02-28T07:54:47.798Z",
+            "updatedAt": "2026-02-28T07:54:47.798Z",
+            "__v": 0
+        },
+        {
+            "route": {
+                "from": "Kochi",
+                "to": "Alappuzha",
+                "segments": [
+                    {
+                        "from": "Kochi",
+                        "to": "Cherai",
+                        "time": 45,
+                        "distance": 25000,
+                        "segmentPrice": 1000,
+                        "note": "Passing through the harbor",
+                        "_id": "69a29f61a8e022d4e58080f0"
+                    },
+                    {
+                        "from": "Cherai",
+                        "to": "Alappuzha",
+                        "time": 95,
+                        "distance": 55000,
+                        "segmentPrice": 2200,
+                        "note": "Entering the backwater channels",
+                        "_id": "69a29f61a8e022d4e58080f1"
+                    }
+                ],
+                "totalTime": 140,
+                "totalDistance": 80000
+            },
+            "_id": "69a29f61a8e022d4e58080ef",
+            "name": "Malabar Heritage",
+            "description": "Cultural voyage through the backwaters and coast of Kerala",
+            "price": 3200,
+            "capacity": 80,
+            "status": "ACTIVE",
+            "image": "malabar_heritage.png",
+            "createdAt": "2026-02-28T07:55:13.896Z",
+            "updatedAt": "2026-02-28T07:55:13.896Z",
+            "__v": 0
+        },
+        {
+            "route": {
+                "from": "Mangalore",
+                "to": "Kavaratti",
+                "segments": [
+                    {
+                        "from": "Mangalore",
+                        "to": "Kadmat",
+                        "time": 480,
+                        "distance": 280000,
+                        "segmentPrice": 5950,
+                        "note": "Deep sea crossing",
+                        "_id": "69a29fa7199661620d355874"
+                    },
+                    {
+                        "from": "Kadmat",
+                        "to": "Kavaratti",
+                        "time": 180,
+                        "distance": 120000,
+                        "segmentPrice": 2550,
+                        "note": "Lagoon navigation",
+                        "_id": "69a29fa7199661620d355875"
+                    }
+                ],
+                "totalTime": 660,
+                "totalDistance": 400000
+            },
+            "_id": "69a29fa7199661620d355873",
+            "name": "Coral Reef Voyager",
+            "description": "Deep sea expedition to the Lakshadweep archipelago",
+            "price": 8500,
+            "capacity": 150,
+            "status": "ACTIVE",
+            "image": "coral_voyager.png",
+            "createdAt": "2026-02-28T07:56:23.417Z",
+            "updatedAt": "2026-02-28T07:56:23.417Z",
+            "__v": 0
+        },
+        {
+            "route": {
+                "from": "Panjim",
+                "to": "Palolem",
+                "segments": [
+                    {
+                        "from": "Panjim",
+                        "to": "Mormugao",
+                        "time": 40,
+                        "distance": 30000,
+                        "segmentPrice": 800,
+                        "note": "Mandovi River exit",
+                        "_id": "69a29fc165655c3de1830f5e"
+                    },
+                    {
+                        "from": "Mormugao",
+                        "to": "Palolem",
+                        "time": 50,
+                        "distance": 45000,
+                        "segmentPrice": 1200,
+                        "note": "Southward coastal cruise",
+                        "_id": "69a29fc165655c3de1830f5f"
+                    }
+                ],
+                "totalTime": 90,
+                "totalDistance": 75000
+            },
+            "_id": "69a29fc165655c3de1830f5d",
+            "name": "Konkan Sun-Seeker",
+            "description": "Short hop between the popular beaches of North and South Goa",
+            "price": 2000,
+            "capacity": 60,
+            "status": "ACTIVE",
+            "image": "sun_seeker.png",
+            "createdAt": "2026-02-28T07:56:49.606Z",
+            "updatedAt": "2026-02-28T07:56:49.606Z",
+            "__v": 0
+        },
+        {
+            "route": {
+                "from": "Mumbai",
+                "to": "Goa",
+                "segments": [
+                    {
+                        "from": "Mumbai",
+                        "to": "Raigad",
+                        "time": 60,
+                        "distance": 50000,
+                        "segmentPrice": 25,
+                        "note": "Cruising along the coast",
+                        "_id": "69a2a0ac65655c3de1830f6e"
+                    },
+                    {
+                        "from": "Raigad",
+                        "to": "Goa",
+                        "time": 120,
+                        "distance": 150000,
+                        "segmentPrice": 75,
+                        "note": "Open sea route",
+                        "_id": "69a2a0ac65655c3de1830f6f"
+                    }
+                ],
+                "totalTime": 180,
+                "totalDistance": 200000
+            },
+            "_id": "69a2a0ac65655c3de1830f6d",
+            "name": "Royal Cruise",
+            "description": "Luxury cruise from Mumbai to Goa",
+            "price": 100,
+            "capacity": 100,
+            "status": "ACTIVE",
+            "image": "cruise1.png",
+            "createdAt": "2026-02-28T08:00:44.842Z",
+            "updatedAt": "2026-02-28T08:00:44.842Z",
+            "__v": 0
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+PUT : http://localhost:3000/api/bookings/update/BK-305519
+
+{
+  "seatsBooked": 3,
+  "boardingPoint": "Raigad",
+  "dropPoint": "Goa",
+  "travelDate": "2026-05-01",
+  "status": "CONFIRMED"
+}
+
+or
+
+{
+  "seatsBooked": 3,
+  "boardingPoint": "Raigad",
+  "dropPoint": "Goa",
+  "travelDate": "2026-05-01"
+}

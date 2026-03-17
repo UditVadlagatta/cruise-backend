@@ -1,0 +1,90 @@
+PUT : http://localhost:5000/api/payments/verify/69b01c6957792ff3c5d47a32
+
+json: 
+
+1.
+{
+  "status": "SUCCESS",
+  "remarks": "Payment screenshot verified. Amount matched."
+}
+output:
+{
+    "message": "Payment verified successfully",
+    "payment": {
+        "_id": "69b01c6957792ff3c5d47a32",
+        "booking": {
+            "_id": "69aff6fa46b20bee6cc05a9c",
+            "customer": "69a02fda4697aa6fece897b7",
+            "cruise": {
+                "route": {
+                    "from": "Kochi",
+                    "to": "Alappuzha",
+                    "segments": [
+                        {
+                            "from": "Kochi",
+                            "to": "Cherai",
+                            "time": 45,
+                            "distance": 25000,
+                            "segmentPrice": 1000,
+                            "note": "Passing through the harbor",
+                            "_id": "69a29f61a8e022d4e58080f0"
+                        },
+                        {
+                            "from": "Cherai",
+                            "to": "Alappuzha",
+                            "time": 95,
+                            "distance": 55000,
+                            "segmentPrice": 2200,
+                            "note": "Entering the backwater channels",
+                            "_id": "69a29f61a8e022d4e58080f1"
+                        }
+                    ],
+                    "totalTime": 140,
+                    "totalDistance": 80000
+                },
+                "_id": "69a29f61a8e022d4e58080ef",
+                "name": "Malabar Heritage",
+                "description": "Cultural voyage through the backwaters and coast of Kerala",
+                "price": 3200,
+                "capacity": 80,
+                "status": "ACTIVE",
+                "image": "malabar_heritage.png",
+                "createdAt": "2026-02-28T07:55:13.896Z",
+                "updatedAt": "2026-02-28T07:55:13.896Z",
+                "__v": 0
+            },
+            "travelDate": "2026-05-01T00:00:00.000Z",
+            "seatsBooked": 4,
+            "boardingPoint": "Kochi",
+            "dropPoint": "Alappuzha",
+            "status": "CONFIRMED",
+            "totalPrice": 12800,
+            "bookingCode": "BK-137911",
+            "createdAt": "2026-03-10T10:48:26.553Z",
+            "updatedAt": "2026-03-11T12:31:08.984Z",
+            "__v": 0,
+            "payment": "69b152039c03aca678c74f32"
+        },
+        "customer": {
+            "_id": "69a02fda4697aa6fece897b7",
+            "username": "sham",
+            "email": "sham@gmail.com",
+            "role": "customer",
+            "createdAt": "2026-02-26T11:34:50.921Z",
+            "updatedAt": "2026-03-10T13:34:55.455Z",
+            "__v": 0,
+            "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lcl9pZCI6IjY5YTAyZmRhNDY5N2FhNmZlY2U4OTdiNyIsImlhdCI6MTc3MzE0OTY5NSwiZXhwIjoxNzczMjM2MDk1fQ.eGZNCGUDUmcFfx_Snhl9gudkUndAExupIGs0UjAdwQM"
+        },
+        "cruise": "69a29f61a8e022d4e58080ef",
+        "amount": 12800,
+        "paymentMethod": "UPI",
+        "transactionId": "UPI789456123",
+        "paymentProof": "uploads/payments/proof1.jpg",
+        "status": "SUCCESS",
+        "createdAt": "2026-03-10T13:28:09.655Z",
+        "updatedAt": "2026-03-11T12:31:09.027Z",
+        "__v": 0,
+        "paidAt": "2026-03-11T12:31:08.983Z",
+        "remarks": "Payment screenshot verified. Amount matched."
+    }
+}

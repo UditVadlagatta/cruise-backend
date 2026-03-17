@@ -1,0 +1,6 @@
+POST : http://localhost:3000/api/workers/refresh
+
+json:
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JrZXJfaWQiOiI2OWE3ZGZjOTIwM2JiYjY4ZThmYjUzMDYiLCJpYXQiOjE3NzI2MTE0OTIsImV4cCI6MTc3MzIxNjI5Mn0.DaIiTxITCgr5SseH5JPsF2HcuqmRaZI-AHbeAnouQCs"
+}

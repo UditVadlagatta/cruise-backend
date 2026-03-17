@@ -1,0 +1,24 @@
+POST : http://localhost:3000/api/workers/register
+
+json:
+{
+  "username": "udit",
+  "email": "udit@gmail.com",
+  "password": "123456"
+}
+
+output:
+{
+    "message": "Worker created successfully",
+    "worker": {
+        "username": "udit",
+        "email": "udit@gmail.com",
+        "password": "$2b$10$OLKW74C7oEucPzOaVs9OU.2rDWHQSX4ooJvUDzcLJU9rdmq7hhgyS",
+        "role": "worker",
+        "isActive": true,
+        "_id": "69a7e12aba5d1687039249e9",
+        "createdAt": "2026-03-04T07:37:14.928Z",
+        "updatedAt": "2026-03-04T07:37:14.928Z",
+        "__v": 0
+    }
+}

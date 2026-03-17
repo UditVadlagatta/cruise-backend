@@ -1,0 +1,1 @@
+DELETE :  http://localhost:3000/api/bookings/delete/BK-960194

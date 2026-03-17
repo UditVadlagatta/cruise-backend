@@ -1,0 +1,76 @@
+POST :  http://localhost:3000/api/bookings/create
+
+{
+    "customer": "69a02fd14697aa6fece897b4",
+    "cruise": "69a2a0ac65655c3de1830f6d",
+     "travelDate": "2026-05-01",
+    "seatsBooked": 1,
+    "boardingPoint": "Mumbai",
+    "dropPoint": "Raigad"
+}
+
+
+output:
+{
+    "message": "Payment submitted successfully. Awaiting for verification and status will updated soon...",
+    "payment": {
+        "_id": "69b116ab7c83d4abedf7f892",
+        "booking": {
+            "_id": "69aff6fa46b20bee6cc05a9c",
+            "travelDate": "2026-05-01T00:00:00.000Z",
+            "totalPrice": 12800,
+            "bookingCode": "BK-137911"
+        },
+        "customer": {
+            "_id": "69a02fda4697aa6fece897b7",
+            "username": "sham",
+            "email": "sham@gmail.com"
+        },
+        "cruise": {
+            "route": {
+                "from": "Kochi",
+                "to": "Alappuzha",
+                "segments": [
+                    {
+                        "from": "Kochi",
+                        "to": "Cherai",
+                        "time": 45,
+                        "distance": 25000,
+                        "segmentPrice": 1000,
+                        "note": "Passing through the harbor",
+                        "_id": "69a29f61a8e022d4e58080f0"
+                    },
+                    {
+                        "from": "Cherai",
+                        "to": "Alappuzha",
+                        "time": 95,
+                        "distance": 55000,
+                        "segmentPrice": 2200,
+                        "note": "Entering the backwater channels",
+                        "_id": "69a29f61a8e022d4e58080f1"
+                    }
+                ],
+                "totalTime": 140,
+                "totalDistance": 80000
+            },
+            "_id": "69a29f61a8e022d4e58080ef",
+            "name": "Malabar Heritage",
+            "description": "Cultural voyage through the backwaters and coast of Kerala",
+            "price": 3200,
+            "capacity": 80,
+            "status": "ACTIVE",
+            "image": "malabar_heritage.png",
+            "createdAt": "2026-02-28T07:55:13.896Z",
+            "updatedAt": "2026-02-28T07:55:13.896Z",
+            "__v": 0
+        },
+        "amount": 12800,
+        "paymentMethod": "UPI",
+        "transactionId": "UPI789456123",
+        "paymentProof": "uploads/payments/proof1.jpg",
+        "status": "PENDING",
+        "createdAt": "2026-03-11T07:15:55.745Z",
+        "updatedAt": "2026-03-11T07:15:55.745Z",
+        "__v": 0
+    }
+}
