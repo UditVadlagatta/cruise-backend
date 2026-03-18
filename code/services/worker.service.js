@@ -147,6 +147,12 @@ async update(id, data) {
   return { accessToken: newAccessToken };
 }
 
+async delete(id) {
+    const worker = await workerModel.findByIdAndDelete(id);
+    if (!worker) throw new Error("Worker not found");
+    return worker;
+}
+
 
 }
 
