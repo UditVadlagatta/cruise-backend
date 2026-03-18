@@ -40,6 +40,9 @@ export const auth = (req, res, next) => {
 // ================= authorize role =================
 export const authorizeRoles = (...roles) => {
     return (req, res, next) => {
+        console.log("req.customer:", req.customer);
+        console.log("roles allowed:", roles);
+
 
         if (!req.customer) {
             return res.status(401).json({

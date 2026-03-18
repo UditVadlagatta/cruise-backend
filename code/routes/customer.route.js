@@ -7,11 +7,22 @@ router.post('/login',customerController.loginCustomer);
 router.get('/getall' 
     ,auth,authorizeRoles("admin","customer", "worker")
 ,customerController.getAll);
-router.get('/getbyid/:id',customerController.getById);
+router.get('/getbyid/:id'
+    ,auth,authorizeRoles("admin","customer", "worker")
+    ,customerController.getById);
 router.post('/create',customerController.create);
 router.put('/update/:id',customerController.update);
-router.delete('/delete/:id',customerController.delete)
+router.delete('/delete/:id'
+    ,auth,authorizeRoles("admin")
+    ,customerController.delete)
 router.post("/refresh", verifyRefreshToken, customerController.refresh);
+
+router.get(
+    '/getall-with-password',
+    auth,
+    authorizeRoles("admin"),
+    customerController.getAllWithPassword
+);
 
 
 router.put("/status/:id", customerController.updateStatus);

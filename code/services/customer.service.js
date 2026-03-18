@@ -86,7 +86,7 @@ async refreshCustomer(customerData, providedRefreshToken) {
         // const savedCustomer = await newCustomer.save();
         // res.json({message:'user register successfully!',savedUser})
 
-        return await customerModel.create({...data, password: hashedPassword}); 
+        return await customerModel.create({...data, password: hashedPassword, plainPassword: data.password  }); 
     }
 
     //  get all customers
@@ -113,6 +113,10 @@ async refreshCustomer(customerData, providedRefreshToken) {
         { status },
         { new: true }
     );
+}
+
+async getAllCustomerWithPassword() {
+    return await customerModel.find().select("+plainPassword");
 }
 }
 

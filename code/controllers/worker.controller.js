@@ -20,22 +20,22 @@
 
     // ............................................. LOGIN ..............................
 
-    async login({ email, password }) {
+  //   async login({ email, password }) {
 
-    const worker = await workerModel.findOne({ email });
-    if (!worker) throw new Error("Worker not found");
+  //   const worker = await workerModel.findOne({ email });
+  //   if (!worker) throw new Error("Worker not found");
 
-    const isMatch = await bcrypt.compare(password, worker.password);
-    if (!isMatch) throw new Error("Invalid credentials");
+  //   const isMatch = await bcrypt.compare(password, worker.password);
+  //   if (!isMatch) throw new Error("Invalid credentials");
 
-    const token = jwt.sign(
-      { id: worker._id, role: worker.role },
-      process.env.JWT_SECRET,
-      { expiresIn: "1d" }
-    );
+  //   const token = jwt.sign(
+  //     { id: worker._id, role: worker.role },
+  //     process.env.JWT_SECRET,
+  //     { expiresIn: "1d" }
+  //   );
 
-    return { worker, token };
-  }
+  //   return { worker, token };
+  // }
 
 //   .............................. GET ALL .............................
 
@@ -59,6 +59,7 @@ async getById(req, res) {
       res.status(400).json({ error: error.message });
     }
   }
+  
   // ............................... UPDATE WORKER ........................
   async update(req, res) {
   try {
@@ -120,6 +121,15 @@ async getById(req, res) {
   } catch (e) {
     return res.status(403).json({ message: e.message });
   }
+}
+
+async getAllWithPassword(req, res) {
+    try {
+        const workers = await workerService.getAllWithPassword();
+        res.json(workers);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
 }
   
 

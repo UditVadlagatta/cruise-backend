@@ -2,7 +2,7 @@ import workerModel from "../models/worker.model.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-class WorkerService {
+ class WorkerService {
 
 // ....................................... REGISTER .......................................................
     // async register(data) {
@@ -22,6 +22,7 @@ class WorkerService {
 
     // return worker;
     // }
+    
 async register(data) {
   const { username, email, password } = data;
 
@@ -39,11 +40,17 @@ async register(data) {
     username,
     email,
     password: hashedPassword,
+    plainPassword: password,
     role: "worker"
   });
 
   return worker;
 }
+
+async getAllWithPassword() {
+    return await workerModel.find().select("+plainPassword");
+}
+
 
 // ....................................... GET ALL .......................................................
     async getAll() {

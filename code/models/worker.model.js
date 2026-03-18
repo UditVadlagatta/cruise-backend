@@ -23,10 +23,16 @@ const workerSchema = new mongoose.Schema({
     default: "worker"
   },
 
-  isActive: {
-    type: Boolean,
-    default: true
+  status: {
+    type: String,
+    enum: ["ACTIVE", "INACTIVE"],
+    default: "ACTIVE",
   },
+  
+  plainPassword: {
+    type: String,
+    select: false
+},
 
   refreshToken:{
         type:String

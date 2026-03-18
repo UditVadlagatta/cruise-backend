@@ -4,6 +4,31 @@ import { loginJoi, registerJoi } from "../validators/customer.validator.js";
 
 class CustomerController{
 
+    async getAllWithPassword(req, res) {
+    try {
+        const customers = await customerService.getAllCustomerWithPassword();
+
+        const count = customers.length;
+
+        if (count === 0) {
+            return res.status(200).json({
+                message: "There are no customers in the list",
+                count: 0,
+                customers: []
+            });
+        }
+
+        res.status(200).json({
+            message: "Getting all customers with passwords...",
+            count,
+            customers
+        });
+
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+}
+
     async loginCustomer(req,res){
         try{
             const {error,value}= loginJoi.validate(req.body);

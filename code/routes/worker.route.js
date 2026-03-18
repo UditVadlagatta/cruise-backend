@@ -13,6 +13,13 @@ router.get(
   workerController.getAll
 );
 
+router.get(
+    "/getall-with-password",
+    auth,
+    authorizeRoles("admin"),
+    workerController.getAllWithPassword
+);
+
 // 🔹 Get single worker
 router.get(
   "/getbyid/:id",

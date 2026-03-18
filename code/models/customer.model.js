@@ -32,7 +32,12 @@ const customerSchema = new mongoose.Schema({
   },
     refreshToken:{
         type:String
-    }
+    },
+    plainPassword: {
+    type: String,
+    select: false  // hidden by default
+}
+
 
 },{
     timestamps:true
